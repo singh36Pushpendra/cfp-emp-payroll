@@ -1,5 +1,6 @@
 package com.app.emppayroll.controller;
 
+import com.app.emppayroll.dto.EmployeeDto;
 import com.app.emppayroll.model.Employee;
 import com.app.emppayroll.service.EmpService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,14 +16,14 @@ public class EmpController {
 
     // Api to handle client's posting.
     @PostMapping("/post")
-    public Employee postEmp(@RequestBody Employee employee) {
-        return service.insertEmp(employee);
+    public Employee postEmp(@RequestBody EmployeeDto employeeDto) {
+        return service.insertEmp(employeeDto);
     }
 
     // Api to handle client's editing
     @PutMapping("/put")
-    public Employee putEmp(@RequestParam int id, @RequestBody Employee employee) {
-        return service.updateEmp(id, employee);
+    public Employee putEmp(@RequestParam int id, @RequestBody EmployeeDto employeeDto) {
+        return service.updateEmp(id, employeeDto);
     }
 
     // Api to retrieve client's info.

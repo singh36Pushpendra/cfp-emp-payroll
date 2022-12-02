@@ -1,5 +1,6 @@
 package com.app.emppayroll.service;
 
+import com.app.emppayroll.dto.EmployeeDto;
 import com.app.emppayroll.model.Employee;
 import com.app.emppayroll.repository.IEmpRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,12 +17,14 @@ public class EmpService {
     IEmpRepo repo;
 
     // Saving employee in repo.
-    public Employee insertEmp(Employee emp) {
-        return repo.save(emp);
+    public Employee insertEmp(EmployeeDto empDto) {
+        return repo.save(new Employee(empDto));
     }
 
     // Updating employee in repo.
-    public Employee updateEmp(int id, Employee emp) {
+    public Employee updateEmp(int id, EmployeeDto empDto) {
+
+        Employee emp = new Employee(empDto);
         // Finding an employee by its id and saving to a container object.
         Optional<Employee> optionalEmployee = repo.findById(id);
         optionalEmployee.get().setName(emp.getName());

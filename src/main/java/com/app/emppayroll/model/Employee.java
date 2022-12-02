@@ -1,5 +1,6 @@
 package com.app.emppayroll.model;
 
+import com.app.emppayroll.dto.EmployeeDto;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -7,10 +8,13 @@ import jakarta.persistence.Id;
 
 import java.time.LocalDate;
 
+// To map class into relation(table).
 @Entity
 public class Employee {
 
+    // To define primary key for relation.
     @Id
+    // To increment id value automatically.
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int empId;
     private String name;
@@ -23,13 +27,18 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(String name, long salary, String gender, LocalDate startDate, String note, String profilePic) {
-        this.name = name;
-        this.salary = salary;
-        this.gender = gender;
-        this.startDate = startDate;
-        this.note = note;
-        this.profilePic = profilePic;
+    // Using EmployeeDto object
+    public Employee(EmployeeDto employeeDto) {
+        name = employeeDto.name;
+        salary = employeeDto.salary;
+        gender = employeeDto.gender;
+        startDate = employeeDto.startDate;
+        note = employeeDto.note;
+        profilePic = employeeDto.profilePic;
+    }
+
+    public int getEmpId() {
+        return empId;
     }
 
     public void setEmpId(int empId) {
@@ -58,10 +67,6 @@ public class Employee {
 
     public void setProfilePic(String profilePic) {
         this.profilePic = profilePic;
-    }
-
-    public int getEmpId() {
-        return empId;
     }
 
     public String getName() {
