@@ -2,7 +2,7 @@ package com.app.emppayroll.controller;
 
 import com.app.emppayroll.dto.EmployeeDto;
 import com.app.emppayroll.model.Employee;
-import com.app.emppayroll.service.EmpService;
+import com.app.emppayroll.service.IEmpService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 public class EmpController {
 
     @Autowired // Automatic Dependency Injection.
-    private EmpService service;
+    private IEmpService service;
 
     // Api to handle client's posting.
     @PostMapping("/post")

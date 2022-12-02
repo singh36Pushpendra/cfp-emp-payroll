@@ -10,15 +10,16 @@ import java.util.Optional;
 
 // Marking a class to provide service.
 @Service
-public class EmpService {
+public class EmpService implements IEmpService {
 
     // Used for automatic dependency injection.
     @Autowired
-    IEmpRepo repo;
+    private IEmpRepo repo;
 
     // Saving employee in repo.
     public Employee insertEmp(EmployeeDto empDto) {
-        return repo.save(new Employee(empDto));
+        Employee employee = new Employee(empDto);
+        return repo.save(employee);
     }
 
     // Updating employee in repo.
@@ -33,6 +34,7 @@ public class EmpService {
         optionalEmployee.get().setStartDate(emp.getStartDate());
         optionalEmployee.get().setNote(emp.getNote());
         optionalEmployee.get().setProfilePic(emp.getProfilePic());
+
         return repo.save(optionalEmployee.get());
     }
 
