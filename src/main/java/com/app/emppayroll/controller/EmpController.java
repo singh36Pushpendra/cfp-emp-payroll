@@ -1,36 +1,40 @@
 package com.app.emppayroll.controller;
 
 import com.app.emppayroll.model.Employee;
+import com.app.emppayroll.service.EmpService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-// Providing ability to handle client requests
+// Providing ability to handle client requests.
 @RestController
-@RequestMapping("/emp")
+@RequestMapping(value = {"/emp", "/employee"})
 public class EmpController {
+
+    @Autowired // Automatic Dependency Injection.
+    private EmpService service;
 
     // Api to handle client's posting.
     @PostMapping("/post")
     public Employee postEmp(@RequestBody Employee employee) {
-        return employee;
+        return service.insertEmp(employee);
     }
 
     // Api to handle client's editing
     @PutMapping("/put")
     public Employee putEmp(@RequestParam int id, @RequestBody Employee employee) {
-        employee.setEmpId(id);
-        return employee;
+        return service.updateEmp(id, employee);
     }
 
-    ZZ
     // Api to retrieve client's info.
     @GetMapping("/get")
-    public String getEmp(@RequestParam int id) {
-        return "Employee Profile!";
+    public Employee getEmp(@RequestParam int id) {
+        return service.selectEmp(id);
     }
 
     // Api to delete client's info.
     @DeleteMapping("/delete")
     public String deleteEmp(@RequestParam int id) {
-        return "Employee Deletion!";
+        service.deleteEmp(id);
+        return "Employee '" + id + "' deleted successfully!";
     }
 }

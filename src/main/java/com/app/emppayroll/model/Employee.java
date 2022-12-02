@@ -1,8 +1,17 @@
 package com.app.emppayroll.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
 import java.time.LocalDate;
 
+@Entity
 public class Employee {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int empId;
     private String name;
     private long salary;
@@ -11,8 +20,10 @@ public class Employee {
     private String note;
     private String profilePic;
 
-    public Employee(int empId, String name, long salary, String gender, LocalDate startDate, String note, String profilePic) {
-        this.empId = empId;
+    public Employee() {
+    }
+
+    public Employee(String name, long salary, String gender, LocalDate startDate, String note, String profilePic) {
         this.name = name;
         this.salary = salary;
         this.gender = gender;
