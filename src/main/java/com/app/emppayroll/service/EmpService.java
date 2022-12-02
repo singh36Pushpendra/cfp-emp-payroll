@@ -6,6 +6,7 @@ import com.app.emppayroll.repository.IEmpRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 // Marking a class to provide service.
@@ -44,7 +45,14 @@ public class EmpService implements IEmpService {
     }
 
     // Deleting employee info from repo.
-    public void deleteEmp(int id) {
+    public Employee deleteEmp(int id) {
+        Optional<Employee> optionalEmployee = repo.findById(id);
         repo.deleteById(id);
+        return optionalEmployee.get();
+    }
+
+    // Getting all employee info from repo.
+    public List<Employee> selectAllEmp() {
+        return repo.findAll();
     }
 }
