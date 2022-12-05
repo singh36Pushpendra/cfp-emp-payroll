@@ -1,9 +1,12 @@
 package com.app.emppayroll.controller;
 
 import com.app.emppayroll.dto.EmployeeDto;
+import com.app.emppayroll.dto.ResponseDto;
 import com.app.emppayroll.model.Employee;
 import com.app.emppayroll.service.IEmpService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -21,35 +24,56 @@ public class EmpController {
 
     // Api to handle client's posting.
     @PostMapping("/post")
-    public Employee postEmp(@RequestBody EmployeeDto employeeDto) {
-        employees.add(new Employee(employeeDto));
-        return service.insertEmp(employeeDto);
+    public ResponseEntity<ResponseDto> postEmp(@RequestBody EmployeeDto employeeDto) {
+        Employee employee = service.insertEmp(employeeDto);
+        employees.add(employee);
+
+        // To return message and object both together we use ResponseDto.
+        ResponseDto responseDto = new ResponseDto("You are registered successfully!", employee);
+
+        // Represents the whole Http response.
+        // Used to configure Http response.
+        ResponseEntity<ResponseDto> response = new ResponseEntity<>(responseDto, HttpStatus.OK);
+        return response;
     }
 
     // Api to handle client's editing
     @PutMapping("/put")
-    public Employee putEmp(@RequestParam int id, @RequestBody EmployeeDto employeeDto) {
-        employees.add(new Employee(employeeDto));
-        return service.updateEmp(id, employeeDto);
+    public ResponseEntity<ResponseDto> putEmp(@RequestParam int id, @RequestBody EmployeeDto employeeDto) {
+        Employee employee = service.updateEmp(id, employeeDto);
+        employees.add(employee);
+
+        ResponseDto responseDto = new ResponseDto("Your profile updated succesfully!", employee);
+        ResponseEntity<ResponseDto> response = new ResponseEntity<>(responseDto, HttpStatus.OK);
+        return response;
     }
 
     // Api to retrieve client's info.
     @GetMapping("/get")
-    public Employee getEmp(@RequestParam int id) {
-        return service.selectEmp(id);
+    public ResponseEntity<ResponseDto> getEmp(@RequestParam int id) {
+        Employee employee = service.selectEmp(id);
+        ResponseDto responseDto = new ResponseDto("Your Profile: ", employee);
+        ResponseEntity<ResponseDto> response = new ResponseEntity<>(responseDto, HttpStatus.OK);
+        return response;
     }
 
     // Api to delete client's info.
     @DeleteMapping("/delete")
-    public Employee deleteEmp(@RequestParam int id) {
+    public ResponseEntity<ResponseDto> deleteEmp(@RequestParam int id) {
         Employee employee = service.deleteEmp(id);
         employees.add(employee);
-        return employee;
+
+        ResponseDto responseDto = new ResponseDto("Your profile deleted successfully!", employee);
+        ResponseEntity<ResponseDto> response = new ResponseEntity<>(responseDto, HttpStatus.OK);
+        return response;
     }
 
     // Api to view all emp info.
     @GetMapping("/getall")
-    public List<Employee> getAllEmp() {
-        return service.selectAllEmp();
+    public ResponseEntity<ResponseDto> getAllEmp() {
+        ResponseDto responseDto = new ResponseDto("Profile of all Employees: ", service.selectAllEmp());
+        ResponseEntity<ResponseDto> response = new ResponseEntity<>(responseDto, HttpStatus.OK);
+
+        return response;
     }
 }

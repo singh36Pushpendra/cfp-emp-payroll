@@ -5,11 +5,19 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.time.LocalDate;
 
 // To map class into relation(table).
 @Entity
+
+// Using lombok library to generate boiler plate for setter, getter and zeroth arg constructor.
+@Setter
+@Getter
+@NoArgsConstructor
 public class Employee {
 
     // To define primary key for relation.
@@ -24,9 +32,6 @@ public class Employee {
     private String note;
     private String profilePic;
 
-    public Employee() {
-    }
-
     // Using EmployeeDto object
     public Employee(EmployeeDto employeeDto) {
         name = employeeDto.name;
@@ -35,61 +40,5 @@ public class Employee {
         startDate = employeeDto.startDate;
         note = employeeDto.note;
         profilePic = employeeDto.profilePic;
-    }
-
-    public int getEmpId() {
-        return empId;
-    }
-
-    public void setEmpId(int empId) {
-        this.empId = empId;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setSalary(long salary) {
-        this.salary = salary;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-    public void setStartDate(LocalDate startDate) {
-        this.startDate = startDate;
-    }
-
-    public void setNote(String note) {
-        this.note = note;
-    }
-
-    public void setProfilePic(String profilePic) {
-        this.profilePic = profilePic;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public long getSalary() {
-        return salary;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public LocalDate getStartDate() {
-        return startDate;
-    }
-
-    public String getNote() {
-        return note;
-    }
-
-    public String getProfilePic() {
-        return profilePic;
     }
 }

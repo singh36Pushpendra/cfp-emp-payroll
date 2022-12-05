@@ -25,7 +25,6 @@ public class EmpService implements IEmpService {
 
     // Updating employee in repo.
     public Employee updateEmp(int id, EmployeeDto empDto) {
-
         Employee emp = new Employee(empDto);
         // Finding an employee by its id and saving to a container object.
         Optional<Employee> optionalEmployee = repo.findById(id);
