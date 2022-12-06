@@ -8,22 +8,25 @@ import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.extern.slf4j.Slf4j;
 
 import java.time.LocalDate;
 
 // To map class into relation(table).
 @Entity
 
-// Using lombok library to generate boiler plate for setter, getter and zeroth arg constructor.
-@Setter
+// Using lombok library to generate boiler plate for getter and zeroth arg constructor.
 @Getter
 @NoArgsConstructor
+@Slf4j
 public class Employee {
 
     // To define primary key for relation.
     @Id
     // To increment id value automatically.
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    // Just to add setter for empId instance variable.
+    @Setter
     private int empId;
     private String name;
     private long salary;
@@ -34,6 +37,8 @@ public class Employee {
 
     // Using EmployeeDto object
     public Employee(EmployeeDto employeeDto) {
+        log.info("Inside Employee class constructor!");
+
         name = employeeDto.name;
         salary = employeeDto.salary;
         gender = employeeDto.gender;

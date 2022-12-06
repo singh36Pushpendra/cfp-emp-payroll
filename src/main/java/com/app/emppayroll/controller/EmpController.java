@@ -4,6 +4,7 @@ import com.app.emppayroll.dto.EmployeeDto;
 import com.app.emppayroll.dto.ResponseDto;
 import com.app.emppayroll.model.Employee;
 import com.app.emppayroll.service.IEmpService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +16,8 @@ import java.util.List;
 // Providing ability to handle client requests.
 @RestController
 @RequestMapping(value = {"/emp", "/employee"})
+// In order to use log.info() we need to add bellow annotation.
+@Slf4j
 public class EmpController {
 
     @Autowired // Automatic Dependency Injection.
@@ -25,6 +28,9 @@ public class EmpController {
     // Api to handle client's posting.
     @PostMapping("/post")
     public ResponseEntity<ResponseDto> postEmp(@RequestBody EmployeeDto employeeDto) {
+        // To print something on console.
+        log.info("Executing postEmp() method body!");
+
         Employee employee = service.insertEmp(employeeDto);
         employees.add(employee);
 
