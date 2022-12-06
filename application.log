@@ -1,32 +1,10 @@
-2022-12-06 15:52:10.606 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Starting EmpPayrollApplication using Java 17.0.5 with PID 4836 (C:\Users\micro\Desktop\IdeaProjects\EmpPayroll\target\classes started by micro in C:\Users\micro\Desktop\IdeaProjects\EmpPayroll)
-2022-12-06 15:52:10.612 [restartedMain] DEBUG c.a.emppayroll.EmpPayrollApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-2022-12-06 15:52:10.616 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - No active profile set, falling back to 1 default profile: "default"
-2022-12-06 15:52:29.443 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-12-06 15:52:31.152 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Started EmpPayrollApplication in 22.209 seconds (process running for 24.332)
-2022-12-06 15:52:31.159 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - After starting Spring Boot application!
-2022-12-06 15:55:07.247 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Starting EmpPayrollApplication using Java 17.0.5 with PID 7520 (C:\Users\micro\Desktop\IdeaProjects\EmpPayroll\target\classes started by micro in C:\Users\micro\Desktop\IdeaProjects\EmpPayroll)
-2022-12-06 15:55:07.252 [restartedMain] DEBUG c.a.emppayroll.EmpPayrollApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-2022-12-06 15:55:07.256 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - No active profile set, falling back to 1 default profile: "default"
-2022-12-06 15:55:16.396 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-12-06 15:55:17.300 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Started EmpPayrollApplication in 11.6 seconds (process running for 14.413)
-2022-12-06 15:55:17.307 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - After starting Spring Boot application!
-2022-12-06 16:35:52.121 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Starting EmpPayrollApplication using Java 17.0.5 with PID 3612 (C:\Users\micro\Desktop\IdeaProjects\EmpPayroll\target\classes started by micro in C:\Users\micro\Desktop\IdeaProjects\EmpPayroll)
-2022-12-06 16:35:52.129 [restartedMain] DEBUG c.a.emppayroll.EmpPayrollApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-2022-12-06 16:35:52.135 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - No active profile set, falling back to 1 default profile: "default"
-2022-12-06 16:36:18.194 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-12-06 16:36:20.721 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Started EmpPayrollApplication in 30.465 seconds (process running for 33.267)
-2022-12-06 16:36:20.730 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - After starting Spring Boot application!
-2022-12-06 21:53:25.513 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Starting EmpPayrollApplication using Java 17.0.5 with PID 1116 (C:\Users\micro\Desktop\IdeaProjects\EmpPayroll\target\classes started by micro in C:\Users\micro\Desktop\IdeaProjects\EmpPayroll)
-2022-12-06 21:53:25.604 [restartedMain] DEBUG c.a.emppayroll.EmpPayrollApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-2022-12-06 21:53:25.608 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - The following 1 profile is active: "dev"
-2022-12-06 21:53:48.800 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-12-06 21:53:50.208 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Started EmpPayrollApplication in 31.159 seconds (process running for 52.67)
-2022-12-06 21:53:50.215 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - After starting Spring Boot application!
-2022-12-06 22:44:27.964 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m46s265ms225µs900ns).
-2022-12-06 22:57:01.320 [http-nio-8080-exec-1] INFO  c.a.e.controller.EmpController - Executing postEmp() method body!
-2022-12-06 22:57:01.345 [http-nio-8080-exec-1] INFO  c.app.emppayroll.service.EmpService - Executing insertEmp() method body in service layer!
-2022-12-06 22:57:01.366 [http-nio-8080-exec-1] INFO  com.app.emppayroll.model.Employee - Inside Employee class constructor!
-2022-12-06 22:58:19.982 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException: No value present] with root cause
+2022-12-06 23:19:07.331 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Starting EmpPayrollApplication using Java 17.0.5 with PID 2980 (C:\Users\micro\Desktop\IdeaProjects\EmpPayroll\target\classes started by micro in C:\Users\micro\Desktop\IdeaProjects\EmpPayroll)
+2022-12-06 23:19:07.350 [restartedMain] DEBUG c.a.emppayroll.EmpPayrollApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+2022-12-06 23:19:07.354 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - The following 1 profile is active: "dev"
+2022-12-06 23:19:33.211 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 23:19:35.674 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Started EmpPayrollApplication in 36.242 seconds (process running for 38.969)
+2022-12-06 23:19:35.682 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - After starting Spring Boot application!
+2022-12-06 23:22:32.448 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException: No value present] with root cause
 java.util.NoSuchElementException: No value present
 	at java.base/java.util.Optional.get(Optional.java:143)
 	at com.app.emppayroll.service.EmpService.selectEmp(EmpService.java:44)
@@ -81,113 +59,6 @@ java.util.NoSuchElementException: No value present
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2022-12-06 22:58:40.831 [http-nio-8080-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException: No value present] with root cause
-java.util.NoSuchElementException: No value present
-	at java.base/java.util.Optional.get(Optional.java:143)
-	at com.app.emppayroll.service.EmpService.selectEmp(EmpService.java:44)
-	at com.app.emppayroll.controller.EmpController.getEmp(EmpController.java:60)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:895)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2022-12-06 22:58:47.660 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException: No value present] with root cause
-java.util.NoSuchElementException: No value present
-	at java.base/java.util.Optional.get(Optional.java:143)
-	at com.app.emppayroll.service.EmpService.selectEmp(EmpService.java:44)
-	at com.app.emppayroll.controller.EmpController.getEmp(EmpController.java:60)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:895)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-12-06 23:23:38.038 [http-nio-8080-exec-6] INFO  com.app.emppayroll.model.Employee - Inside Employee class constructor!
+2022-12-06 23:48:04.850 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m7s335ms812µs700ns).
+2022-12-06 23:48:49.110 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s256ms833µs900ns).
