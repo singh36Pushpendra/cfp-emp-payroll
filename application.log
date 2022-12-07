@@ -4,3 +4,218 @@
 2022-12-07 00:02:16.899 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2022-12-07 00:02:18.524 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Started EmpPayrollApplication in 27.88 seconds (process running for 31.623)
 2022-12-07 00:02:18.531 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - After starting Spring Boot application!
+2022-12-07 09:22:10.794 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Starting EmpPayrollApplication using Java 17.0.5 with PID 8284 (C:\Users\micro\Desktop\IdeaProjects\EmpPayroll\target\classes started by micro in C:\Users\micro\Desktop\IdeaProjects\EmpPayroll)
+2022-12-07 09:22:11.015 [restartedMain] DEBUG c.a.emppayroll.EmpPayrollApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+2022-12-07 09:22:11.018 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - The following 1 profile is active: "dev"
+2022-12-07 09:22:56.967 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-07 09:22:59.133 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Started EmpPayrollApplication in 63.07 seconds (process running for 85.889)
+2022-12-07 09:22:59.141 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - After starting Spring Boot application!
+2022-12-07 09:27:17.411 [http-nio-8080-exec-5] INFO  com.app.emppayroll.model.Employee - Inside Employee class constructor!
+2022-12-07 10:09:01.777 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Starting EmpPayrollApplication using Java 17.0.5 with PID 3548 (C:\Users\micro\Desktop\IdeaProjects\EmpPayroll\target\classes started by micro in C:\Users\micro\Desktop\IdeaProjects\EmpPayroll)
+2022-12-07 10:09:01.827 [restartedMain] DEBUG c.a.emppayroll.EmpPayrollApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+2022-12-07 10:09:01.830 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - The following 1 profile is active: "dev"
+2022-12-07 10:09:33.842 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-07 10:09:35.456 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Started EmpPayrollApplication in 37.315 seconds (process running for 40.278)
+2022-12-07 10:09:35.463 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - After starting Spring Boot application!
+2022-12-07 10:18:23.055 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.app.emppayroll.dto.ResponseDto> com.app.emppayroll.controller.EmpController.postEmp(com.app.emppayroll.dto.EmployeeDto): [Field error in object 'employeeDto' on field 'name': rejected value [Dh]; codes [Pattern.employeeDto.name,Pattern.name,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDto.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@6599c03a,^[A-Z]{1}[a-z]{2,}$]; default message [must match "^[A-Z]{1}[a-z]{2,}$"]] ]
+2022-12-07 10:19:38.904 [http-nio-8080-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.app.emppayroll.dto.ResponseDto> com.app.emppayroll.controller.EmpController.postEmp(com.app.emppayroll.dto.EmployeeDto) with 2 errors: [Field error in object 'employeeDto' on field 'name': rejected value []; codes [NotEmpty.employeeDto.name,NotEmpty.name,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDto.name,name]; arguments []; default message [name]]; default message [Employee name can't be null!]] [Field error in object 'employeeDto' on field 'name': rejected value []; codes [Pattern.employeeDto.name,Pattern.name,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDto.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@6599c03a,^[A-Z]{1}[a-z]{2,}$]; default message [must match "^[A-Z]{1}[a-z]{2,}$"]] ]
+2022-12-07 10:20:13.250 [http-nio-8080-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.app.emppayroll.dto.ResponseDto> com.app.emppayroll.controller.EmpController.postEmp(com.app.emppayroll.dto.EmployeeDto): [Field error in object 'employeeDto' on field 'name': rejected value [ ]; codes [Pattern.employeeDto.name,Pattern.name,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDto.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@6599c03a,^[A-Z]{1}[a-z]{2,}$]; default message [must match "^[A-Z]{1}[a-z]{2,}$"]] ]
+2022-12-07 10:20:55.305 [http-nio-8080-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.app.emppayroll.dto.ResponseDto> com.app.emppayroll.controller.EmpController.postEmp(com.app.emppayroll.dto.EmployeeDto): [Field error in object 'employeeDto' on field 'name': rejected value [null]; codes [NotEmpty.employeeDto.name,NotEmpty.name,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDto.name,name]; arguments []; default message [name]]; default message [Employee name can't be null!]] ]
+2022-12-07 10:27:27.912 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Starting EmpPayrollApplication using Java 17.0.5 with PID 8760 (C:\Users\micro\Desktop\IdeaProjects\EmpPayroll\target\classes started by micro in C:\Users\micro\Desktop\IdeaProjects\EmpPayroll)
+2022-12-07 10:27:27.942 [restartedMain] DEBUG c.a.emppayroll.EmpPayrollApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+2022-12-07 10:27:27.944 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - The following 1 profile is active: "dev"
+2022-12-07 10:28:52.411 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-07 10:28:58.952 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Started EmpPayrollApplication in 93.25 seconds (process running for 96.225)
+2022-12-07 10:28:58.959 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - After starting Spring Boot application!
+2022-12-07 10:30:40.382 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.app.emppayroll.dto.ResponseDto> com.app.emppayroll.controller.EmpController.postEmp(com.app.emppayroll.dto.EmployeeDto) with 2 errors: [Field error in object 'employeeDto' on field 'salary': rejected value [8500]; codes [Min.employeeDto.salary,Min.salary,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDto.salary,salary]; arguments []; default message [salary],10000]; default message [Employee salary should be greater than 10,000!]] [Field error in object 'employeeDto' on field 'name': rejected value [dharma]; codes [Pattern.employeeDto.name,Pattern.name,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDto.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@47de5060,^[A-Z]{1}[a-z]{2,}$]; default message [Invalid employee name!]] ]
+2022-12-07 10:32:03.478 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.app.emppayroll.dto.ResponseDto> com.app.emppayroll.controller.EmpController.postEmp(com.app.emppayroll.dto.EmployeeDto): [Field error in object 'employeeDto' on field 'salary': rejected value [8500]; codes [Min.employeeDto.salary,Min.salary,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDto.salary,salary]; arguments []; default message [salary],10000]; default message [Employee salary should be greater than 10,000!]] ]
+2022-12-07 10:34:21.184 [http-nio-8080-exec-5] INFO  c.a.e.controller.EmpController - Executing postEmp() method body!
+2022-12-07 10:34:21.186 [http-nio-8080-exec-5] INFO  c.app.emppayroll.service.EmpService - Executing insertEmp() method body in service layer!
+2022-12-07 10:34:21.187 [http-nio-8080-exec-5] INFO  com.app.emppayroll.model.Employee - Inside Employee class constructor!
+2022-12-07 12:03:39.089 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59m23s201ms617µs200ns).
+2022-12-07 12:04:54.001 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m17s97ms449µs400ns).
+2022-12-07 12:08:42.867 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s794ms509µs600ns).
+2022-12-07 12:41:19.788 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Starting EmpPayrollApplication using Java 17.0.5 with PID 6644 (C:\Users\micro\Desktop\IdeaProjects\EmpPayroll\target\classes started by micro in C:\Users\micro\Desktop\IdeaProjects\EmpPayroll)
+2022-12-07 12:41:19.840 [restartedMain] DEBUG c.a.emppayroll.EmpPayrollApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+2022-12-07 12:41:19.842 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - The following 1 profile is active: "dev"
+2022-12-07 12:42:33.262 [restartedMain] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:284)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:177)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:36)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:255)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:230)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:218)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:138)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1350)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1421)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1797)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1747)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:905)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.app.emppayroll.EmpPayrollApplication.main(EmpPayrollApplication.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.negotiateSSLConnection(NativeProtocol.java:378)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:205)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1433)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:133)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818)
+	... 52 common frames omitted
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at java.base/sun.security.ssl.SSLSocketImpl.handleEOF(SSLSocketImpl.java:1714)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1513)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1420)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+	at com.mysql.cj.protocol.ExportControlled.performTlsHandshake(ExportControlled.java:347)
+	at com.mysql.cj.protocol.StandardSocketFactory.performTlsHandshake(StandardSocketFactory.java:191)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.performTlsHandshake(NativeSocketConnection.java:101)
+	at com.mysql.cj.protocol.a.NativeProtocol.negotiateSSLConnection(NativeProtocol.java:369)
+	... 57 common frames omitted
+	Suppressed: java.net.SocketException: An established connection was aborted by the software in your host machine
+		at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:420)
+		at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:440)
+		at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:826)
+		at java.base/java.net.Socket$SocketOutputStream.write(Socket.java:1035)
+		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:81)
+		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:407)
+		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:314)
+		at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:467)
+		... 62 common frames omitted
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:483)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readFully(SSLSocketInputRecord.java:461)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:243)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:181)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:111)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1505)
+	... 64 common frames omitted
+2022-12-07 12:42:33.634 [restartedMain] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2022-12-07 12:42:33.635 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2022-12-07 12:42:34.427 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1751)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:905)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.app.emppayroll.EmpPayrollApplication.main(EmpPayrollApplication.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:267)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:230)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:218)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:138)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1350)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1421)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1797)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1747)
+	... 21 common frames omitted
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:147)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:60)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:244)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:36)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:255)
+	... 36 common frames omitted
+2022-12-07 12:46:23.303 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Starting EmpPayrollApplication using Java 17.0.5 with PID 11172 (C:\Users\micro\Desktop\IdeaProjects\EmpPayroll\target\classes started by micro in C:\Users\micro\Desktop\IdeaProjects\EmpPayroll)
+2022-12-07 12:46:23.354 [restartedMain] DEBUG c.a.emppayroll.EmpPayrollApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+2022-12-07 12:46:23.357 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - The following 1 profile is active: "dev"
+2022-12-07 12:46:49.977 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-07 12:46:51.923 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Started EmpPayrollApplication in 33.666 seconds (process running for 41.049)
+2022-12-07 12:46:51.930 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - After starting Spring Boot application!
+2022-12-07 12:49:31.390 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.app.emppayroll.dto.ResponseDto> com.app.emppayroll.controller.EmpController.postEmp(com.app.emppayroll.dto.EmployeeDto): [Field error in object 'employeeDto' on field 'gender': rejected value [m]; codes [Pattern.employeeDto.gender,Pattern.gender,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDto.gender,gender]; arguments []; default message [gender],[Ljakarta.validation.constraints.Pattern$Flag;@ded52a7,male|female]; default message [Employee should be either male or female!]] ]
+2022-12-07 12:56:51.636 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.app.emppayroll.dto.ResponseDto> com.app.emppayroll.controller.EmpController.postEmp(com.app.emppayroll.dto.EmployeeDto): [Field error in object 'employeeDto' on field 'gender': rejected value [Male]; codes [Pattern.employeeDto.gender,Pattern.gender,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDto.gender,gender]; arguments []; default message [gender],[Ljakarta.validation.constraints.Pattern$Flag;@ded52a7,male|female]; default message [Employee should be either male or female!]] ]
+2022-12-07 12:57:52.576 [http-nio-8080-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.app.emppayroll.dto.ResponseDto> com.app.emppayroll.controller.EmpController.postEmp(com.app.emppayroll.dto.EmployeeDto): [Field error in object 'employeeDto' on field 'gender': rejected value [Malem]; codes [Pattern.employeeDto.gender,Pattern.gender,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDto.gender,gender]; arguments []; default message [gender],[Ljakarta.validation.constraints.Pattern$Flag;@ded52a7,male|female]; default message [Employee should be either male or female!]] ]
+2022-12-07 12:58:55.055 [http-nio-8080-exec-8] INFO  c.a.e.controller.EmpController - Executing postEmp() method body!
+2022-12-07 12:58:55.126 [http-nio-8080-exec-8] INFO  c.app.emppayroll.service.EmpService - Executing insertEmp() method body in service layer!
+2022-12-07 12:58:55.127 [http-nio-8080-exec-8] INFO  com.app.emppayroll.model.Employee - Inside Employee class constructor!
+2022-12-07 13:00:07.304 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2022-12-07 13:01:33.119 [http-nio-8080-exec-5] INFO  com.app.emppayroll.model.Employee - Inside Employee class constructor!
+2022-12-07 13:08:59.174 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Starting EmpPayrollApplication using Java 17.0.5 with PID 6920 (C:\Users\micro\Desktop\IdeaProjects\EmpPayroll\target\classes started by micro in C:\Users\micro\Desktop\IdeaProjects\EmpPayroll)
+2022-12-07 13:08:59.192 [restartedMain] DEBUG c.a.emppayroll.EmpPayrollApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+2022-12-07 13:08:59.195 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - The following 1 profile is active: "dev"
+2022-12-07 13:09:24.314 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-07 13:09:25.882 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Started EmpPayrollApplication in 30.938 seconds (process running for 38.813)
+2022-12-07 13:09:25.889 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - After starting Spring Boot application!
+2022-12-07 13:11:47.422 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.app.emppayroll.dto.ResponseDto> com.app.emppayroll.controller.EmpController.putEmp(int,com.app.emppayroll.dto.EmployeeDto): [Field error in object 'employeeDto' on field 'gender': rejected value [Male]; codes [Pattern.employeeDto.gender,Pattern.gender,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDto.gender,gender]; arguments []; default message [gender],[Ljakarta.validation.constraints.Pattern$Flag;@1142637,male|female]; default message [Employee should be either male or female!]] ]
+2022-12-07 13:15:46.131 [http-nio-8080-exec-4] INFO  com.app.emppayroll.model.Employee - Inside Employee class constructor!
