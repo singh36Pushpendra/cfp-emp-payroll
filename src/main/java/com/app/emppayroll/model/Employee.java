@@ -11,6 +11,7 @@ import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 
 import java.time.LocalDate;
+import java.util.List;
 
 // To map class into relation(table).
 @Entity
@@ -35,6 +36,8 @@ public class Employee {
     private String note;
     private String profilePic;
 
+    private List<String> departments;
+
     // Using EmployeeDto object
     public Employee(EmployeeDto employeeDto) {
         log.info("Inside Employee class constructor!");
@@ -45,5 +48,6 @@ public class Employee {
         startDate = employeeDto.startDate;
         note = employeeDto.note;
         profilePic = employeeDto.profilePic;
+        departments = employeeDto.departments;
     }
 }

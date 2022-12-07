@@ -6,6 +6,7 @@ import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
 
 import java.time.LocalDate;
+import java.util.List;
 
 // Using lombok generating parameterized constructor.
 @AllArgsConstructor
@@ -28,4 +29,5 @@ public class EmployeeDto {
 
     public String profilePic;
 
+    public List<String> departments;
 }

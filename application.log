@@ -518,3 +518,21 @@ java.util.NoSuchElementException: No value present
 2022-12-07 19:33:59.008 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - After starting Spring Boot application!
 2022-12-07 19:42:21.139 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.app.emppayroll.exception.EmpPayrollException: Employee for id = '21' not exists!]
 2022-12-07 19:42:41.023 [http-nio-8080-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.app.emppayroll.exception.EmpPayrollException: Employee for id = '20' not exists!]
+2022-12-07 21:15:54.020 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h19m35s681ms664µs100ns).
+2022-12-07 21:16:44.431 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s970ms559µs300ns).
+2022-12-07 21:55:28.676 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Starting EmpPayrollApplication using Java 17.0.5 with PID 5684 (C:\Users\micro\Desktop\IdeaProjects\EmpPayroll\target\classes started by micro in C:\Users\micro\Desktop\IdeaProjects\EmpPayroll)
+2022-12-07 21:55:28.742 [restartedMain] DEBUG c.a.emppayroll.EmpPayrollApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+2022-12-07 21:55:28.744 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - The following 1 profile is active: "dev"
+2022-12-07 21:56:07.992 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-07 21:56:10.851 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Started EmpPayrollApplication in 48.174 seconds (process running for 51.408)
+2022-12-07 21:56:10.858 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - After starting Spring Boot application!
+2022-12-07 21:59:58.705 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Starting EmpPayrollApplication using Java 17.0.5 with PID 9432 (C:\Users\micro\Desktop\IdeaProjects\EmpPayroll\target\classes started by micro in C:\Users\micro\Desktop\IdeaProjects\EmpPayroll)
+2022-12-07 21:59:58.732 [restartedMain] DEBUG c.a.emppayroll.EmpPayrollApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+2022-12-07 21:59:58.734 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - The following 1 profile is active: "dev"
+2022-12-07 22:00:22.987 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-07 22:00:26.646 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Started EmpPayrollApplication in 29.499 seconds (process running for 31.627)
+2022-12-07 22:00:26.654 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - After starting Spring Boot application!
+2022-12-07 22:04:55.440 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2022-12-07 22:05:13.945 [http-nio-8080-exec-3] INFO  c.a.e.controller.EmpController - Executing postEmp() method body!
+2022-12-07 22:05:13.947 [http-nio-8080-exec-3] INFO  c.app.emppayroll.service.EmpService - Executing insertEmp() method body in service layer!
+2022-12-07 22:05:13.949 [http-nio-8080-exec-3] INFO  com.app.emppayroll.model.Employee - Inside Employee class constructor!
