@@ -4,6 +4,7 @@ import com.app.emppayroll.dto.EmployeeDto;
 import com.app.emppayroll.dto.ResponseDto;
 import com.app.emppayroll.model.Employee;
 import com.app.emppayroll.service.IEmpService;
+import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -27,7 +28,8 @@ public class EmpController {
 
     // Api to handle client's posting.
     @PostMapping("/post")
-    public ResponseEntity<ResponseDto> postEmp(@RequestBody EmployeeDto employeeDto) {
+    // Telling spring to evaluate constraint annotations on method parameter
+    public ResponseEntity<ResponseDto> postEmp(@Valid @RequestBody EmployeeDto employeeDto) {
         // To print something on console.
         log.info("Executing postEmp() method body!");
 
@@ -45,7 +47,7 @@ public class EmpController {
 
     // Api to handle client's editing
     @PutMapping("/put")
-    public ResponseEntity<ResponseDto> putEmp(@RequestParam int id, @RequestBody EmployeeDto employeeDto) {
+    public ResponseEntity<ResponseDto> putEmp(@RequestParam int id, @Valid @RequestBody EmployeeDto employeeDto) {
         Employee employee = service.updateEmp(id, employeeDto);
         employees.add(employee);
 
