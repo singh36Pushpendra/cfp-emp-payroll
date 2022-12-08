@@ -35,6 +35,7 @@ public class Employee {
     private LocalDate startDate;
     private String note;
     private String profilePic;
+    private List<String> departments;
 
     // Using EmployeeDto object
     public Employee(EmployeeDto employeeDto) {
@@ -46,5 +47,6 @@ public class Employee {
         startDate = employeeDto.startDate;
         note = employeeDto.note;
         profilePic = employeeDto.profilePic;
+        departments = employeeDto.departments;
     }
 }

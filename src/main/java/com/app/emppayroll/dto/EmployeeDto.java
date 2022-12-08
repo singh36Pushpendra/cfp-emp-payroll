@@ -29,4 +29,6 @@ public class EmployeeDto {
 
     public String profilePic;
 
+    public List<String> departments;
+
 }

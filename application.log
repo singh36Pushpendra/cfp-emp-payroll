@@ -539,3 +539,9 @@ java.util.NoSuchElementException: No value present
 2022-12-07 22:05:13.949 [http-nio-8080-exec-3] INFO  com.app.emppayroll.model.Employee - Inside Employee class constructor!
 =======
 >>>>>>> uc12-custom-exception
+2022-12-08 14:22:21.128 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Starting EmpPayrollApplication using Java 17.0.5 with PID 6808 (C:\Users\micro\Desktop\IdeaProjects\EmpPayroll\target\classes started by micro in C:\Users\micro\Desktop\IdeaProjects\EmpPayroll)
+2022-12-08 14:22:21.168 [restartedMain] DEBUG c.a.emppayroll.EmpPayrollApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+2022-12-08 14:22:21.171 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - The following 1 profile is active: "dev"
+2022-12-08 14:22:54.793 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-08 14:22:57.003 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Started EmpPayrollApplication in 37.664 seconds (process running for 46.969)
+2022-12-08 14:22:57.011 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - After starting Spring Boot application!
