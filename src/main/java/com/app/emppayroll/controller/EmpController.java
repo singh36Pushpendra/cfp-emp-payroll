@@ -84,4 +84,11 @@ public class EmpController {
 
         return response;
     }
+
+    // Defining api to get employee by department.
+    @GetMapping("/getbydept/{department}")
+    public ResponseEntity<ResponseDto> getEmpsByDept(@PathVariable String department) {
+        ResponseDto responseDto = new ResponseDto("Profiles of employees which have " + department + " department!", service.getEmpsByDepartment(department));
+        return new ResponseEntity<>(responseDto, HttpStatus.OK);
+    }
 }

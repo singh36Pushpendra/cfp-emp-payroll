@@ -12,4 +12,5 @@ public interface IEmpService {
     Employee selectEmp(int id);
     Employee deleteEmp(int id);
     List<Employee> selectAllEmp();
+    List<Employee> getEmpsByDepartment(String dept);
 }

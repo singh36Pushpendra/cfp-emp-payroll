@@ -64,4 +64,10 @@ public class EmpService implements IEmpService {
     public List<Employee> selectAllEmp() {
         return repo.findAll();
     }
+
+    @Override
+    // Getting employees which have same department.
+    public List<Employee> getEmpsByDepartment(String dept) {
+        return repo.findEmpByDepartment(dept);
+    }
 }
