@@ -1,6 +1,7 @@
 package com.app.emppayroll.service;
 
 import com.app.emppayroll.dto.EmployeeDto;
+import com.app.emppayroll.exception.EmpPayrollException;
 import com.app.emppayroll.model.Employee;
 import com.app.emppayroll.repository.IEmpRepo;
 import lombok.extern.slf4j.Slf4j;
@@ -36,17 +37,25 @@ public class EmpService implements IEmpService {
             emp.setEmpId(id);
             return repo.save(emp);
         }
-        return null;
+        throw new EmpPayrollException("Can't update employee details id = '" + id + "' not exists!");
     }
 
     // Getting employee info from repo.
     public Employee selectEmp(int id) {
-        return repo.findById(id).get();
+        Optional<Employee> optionalEmployee = repo.findById(id);
+
+        // Throwing custom exception.
+        if (! optionalEmployee.isPresent())
+            throw new EmpPayrollException("Employee for id = '" + id + "' not exists!");
+
+        return optionalEmployee.get();
     }
 
     // Deleting employee info from repo.
     public Employee deleteEmp(int id) {
         Optional<Employee> optionalEmployee = repo.findById(id);
+        if (! optionalEmployee.isPresent())
+            throw new EmpPayrollException("Can't delete id = '" + id + "' not exists!");
         repo.deleteById(id);
         return optionalEmployee.get();
     }

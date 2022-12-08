@@ -30,4 +30,12 @@ public class EmpPayrollExceptionHandler {
 
         return new ResponseEntity<>(responseDto, HttpStatus.BAD_REQUEST);
     }
+
+    // Handle exception which are throws manually from service class.
+    @ExceptionHandler(EmpPayrollException.class)
+    public ResponseEntity<ResponseDto> handleMethodArgNotValidException(EmpPayrollException exception) {
+
+        ResponseDto responseDto = new ResponseDto("Exception while processing employee request!", exception.getMessage());
+        return new ResponseEntity<ResponseDto>(responseDto, HttpStatus.BAD_REQUEST);
+    }
 }

@@ -518,6 +518,7 @@ java.util.NoSuchElementException: No value present
 2022-12-07 19:33:59.008 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - After starting Spring Boot application!
 2022-12-07 19:42:21.139 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.app.emppayroll.exception.EmpPayrollException: Employee for id = '21' not exists!]
 2022-12-07 19:42:41.023 [http-nio-8080-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.app.emppayroll.exception.EmpPayrollException: Employee for id = '20' not exists!]
+<<<<<<< HEAD
 2022-12-07 21:15:54.020 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h19m35s681ms664µs100ns).
 2022-12-07 21:16:44.431 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s970ms559µs300ns).
 2022-12-07 21:55:28.676 [restartedMain] INFO  c.a.emppayroll.EmpPayrollApplication - Starting EmpPayrollApplication using Java 17.0.5 with PID 5684 (C:\Users\micro\Desktop\IdeaProjects\EmpPayroll\target\classes started by micro in C:\Users\micro\Desktop\IdeaProjects\EmpPayroll)
@@ -536,3 +537,5 @@ java.util.NoSuchElementException: No value present
 2022-12-07 22:05:13.945 [http-nio-8080-exec-3] INFO  c.a.e.controller.EmpController - Executing postEmp() method body!
 2022-12-07 22:05:13.947 [http-nio-8080-exec-3] INFO  c.app.emppayroll.service.EmpService - Executing insertEmp() method body in service layer!
 2022-12-07 22:05:13.949 [http-nio-8080-exec-3] INFO  com.app.emppayroll.model.Employee - Inside Employee class constructor!
+=======
+>>>>>>> uc12-custom-exception
